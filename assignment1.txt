@@ -1,0 +1,140 @@
+Question-1
+-------------------------------
+---------------------------------
+import java.util.*;
+public class ClassSet
+{
+public static int sumOfPalindromeNo(int n1,int n2)
+{
+List I1=new ArrayList();
+for(int i=n1;i<=n2;i++)
+{
+int r=0,n3=i;
+while(n3!=0)
+{
+r=(r*10)+(n3%10);
+n3=n3/10;
+}
+if(r==i)
+I1.add(i);
+}
+System.out.println(I1);
+int s=0;
+int i=0;
+s+=I1.get(i);
+return s;
+}
+public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+System.out.println("enter the range");
+int n1=s.nextInt();
+int n2=s.nextInt();
+System.out.println("sum of palindromenos.within given range is:"+sumOfPalindromeNo(n1,n2));
+}
+}
+
+question-2
+-----------------------------------------------
+--------------------------------------------------
+
+import java.util.*;
+public class Main
+{
+public static Stringmaxmarkstudent(String[] str1)
+{
+Map<String,Integer> m=newHashMap<String, integer>();
+for(int i=0;i<str1.length;i++)
+{
+string str2=str1[i];
+StringTokenizer t=new
+StringTokenizer(str2,"#");
+String str3=t.nextToken();
+int n1=Integer.parseInt(t.nextToken());
+int n2=Integer.parseInt(t.nextToken());
+int n3=Integer.parseInt(t.nextToken());
+int n=n1+n2+n3;
+m.put(str3,n)
+}
+int max=0;
+String m1=new String();
+Iterator<String> i=m.keySet().iterator();
+while(i.hasNext())
+{
+String str4=i.next();
+int j=m.get(str4);
+if(j>max)
+{
+max=j;
+m1=str4;
+}
+}
+return m1;
+}
+public static void main(String[] args)
+{
+String[] str1={"arun#12#12#","deepak#13#`12#12");
+System.out.println(maxMarkStudent(str1));
+}
+}
+
+
+Question 3
+----------------------------------------------------------
+---------------------------------------------------------
+
+
+package Assement;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class Hashmap
+{
+static HashMap<Integer,Integer>sk=newHashMap<Integer,Integer>();
+public static void main(String[] args)
+sk.put(12,90);
+sk.put(35,90);
+sk.put(33,90);
+sk.put(56,88);
+int count=0;
+int sum=0;
+Iterator<Map.Entry<Integer,Integer>>itr=sk.entrySet().iterator();
+while(itr.hasNext())
+{
+Map.Entry<Integer,Integer>
+ski=itr.next();
+if(ski.getKey()%2!=0)
+{
+sum +=ski.getValue();
+count++;
+}
+}
+System.out.println(sum/count+"The average");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
